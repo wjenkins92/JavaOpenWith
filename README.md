@@ -39,7 +39,7 @@ public class SampleProgram
 
 **Step 3: Modify Info.plist** You must modify your application's `Info.plist` and add a key for each file type you want your application to modify. To do this, right click on your `.app` executable and select "Show Package Contents".
 
-![alt text](https://raw.githubusercontent.com/wjenkins92/JavaOpenWith/master/ShowPackageContents.png?token=AITC3AKPBK2TJAXICUA577K6KA7W4 "Show Package Contents on Mac")
+![alt text](https://raw.githubusercontent.com/wjenkins92/JavaOpenWith/master/ShowPackageContents.png?token=AITC3AJP5GRD623S2KNQ3FC6KBBHC "Show Package Contents on Mac")
 
 Navigate to `/Contents/` and open `Info.plist` with a text editor. At the end of this file, add a `CFBundleDocumentTypes` key and an array holding each of the file types you want your application to be able to open. For more information, see the Apple Developer's documentation for [CFBundleDocumentTypes](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/uid/TP40009249-101685-TPXREF107), [Uniform Type Identifiers](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319), and [System-Declared Uniform Type Identifiers](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html#//apple_ref/doc/uid/TP40009259).
 
